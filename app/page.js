@@ -2,7 +2,7 @@ import React from 'react';
 import { Play, Info } from 'lucide-react';
 
 async function getMovies(type) {
-  const API_KEY = '3fd2be37160583b099898a937a075303'; // Bhai ye dummy key hai, apni TMDB se replace karna
+  const API_KEY = '56b50689afe7438a51aab0d653679865'; // Bhai ye dummy key hai, apni TMDB se replace karna
   const res = await fetch(`https://api.themoviedb.org/3${type}?api_key=${API_KEY}`);
   return res.json();
 }
